@@ -1,0 +1,30 @@
+{
+    "strict": true,
+    "debug": true,
+    "sp": {
+        "entityId": "https://localhost:8000/metadata/",
+        "assertionConsumerService": {
+            "url": "http://localhost:8000/?acs",
+            "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST"
+        },
+           "singleLogoutService": {
+            "url": "https://auth.pingone.com/f5dcc9b7-c5ab-42c5-a233-a173c1995254/saml20/idp/slo",
+            "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+        },
+        "NameIDFormat": "urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified",
+        "x509cert": "MIIDejCCAmKgAwIBAgIGAYs/Kr5AMA0GCSqGSIb3DQEBCwUAMH4xCzAJBgNVBAYTAlVTMRYwFAYDVQQKDA1QaW5nIElkZW50aXR5MRYwFAYDVQQLDA1QaW5nIElkZW50aXR5MT8wPQYDVQQDDDZQaW5nT25lIFNTTyBDZXJ0aWZpY2F0ZSBmb3IgQWRtaW5pc3RyYXRvcnMgZW52aXJvbm1lbnQwHhcNMjMxMDE3MTk0NDA3WhcNMjQxMDE2MTk0NDA3WjB+MQswCQYDVQQGEwJVUzEWMBQGA1UECgwNUGluZyBJZGVudGl0eTEWMBQGA1UECwwNUGluZyBJZGVudGl0eTE/MD0GA1UEAww2UGluZ09uZSBTU08gQ2VydGlmaWNhdGUgZm9yIEFkbWluaXN0cmF0b3JzIGVudmlyb25tZW50MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkupOuYgJcm5rUTN1nYjvkHZEg1ElT8pcorgU8pSWAktk66hHqEUkU2u/K0aBN0M0mxRoaCJP7xp9IwVFRrKzYe8nOCBLmm7vhgCYFyaML65XMS/d0FbMA0sYlZVIeNPvL7k2zrjwjM67FTc6+W+OM/tXKQpxTCPyOud45BQMUu2o0nIjnMqdM9DSDU1HgsK/HCtlZagIx1akvv7VdQ43Sk8XIX4/0NbsSxtWCXHKbgRMP4U/9Z3keA3npD61qOdLz3MJHw2a11d6xTPqBBtQHzqjbaIUgbpjDFWrQqkACgYLCsAYCTLErPy3L5pweYNR/q9n+RlI4uheXM15kdQIAQIDAQABMA0GCSqGSIb3DQEBCwUAA4IBAQBNEvnHkQ0u66Bcdl6nXipnMT+awbl/NqWeE/rtSVqWTCdcPhIh+g+jWFaLsv9zAsw1MW4brjO7dc69ddkJKWj7qG6JhaT4q4+/tdGiVyR9qQ6M8VELTci+RVN+ZyqmSubWZLHgU9DOZkP0toSTl87bt1OWl/eh6F6PY/NVpVzp57YDz6Ui457virfIar/IYBkw4T8axJ+rHLLUamONZtpQbauLNyY801UTALsL08wG7UzRt/Oxprp7+/YTpNeqJPSxg79KYOwiF8Cif+CN6KihA+Vpqms3CKgBo8iaUjl6FfI73H+Gl+GGNKm9ZmQtfanrXLg7y6Y7lMMiljqXvYnh",
+        "privateKey": " "
+    },
+    "idp": {
+        "entityId": "https://auth.pingone.com/f5dcc9b7-c5ab-42c5-a233-a173c1995254",
+        "singleSignOnService": {
+            "url": "https://auth.pingone.com/f5dcc9b7-c5ab-42c5-a233-a173c1995254/saml20/idp/startsso?spEntityId=https://localhost:8000/metadata/",
+            "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+        },
+            "singleLogoutService": {
+            "url": "https://auth.pingone.com/f5dcc9b7-c5ab-42c5-a233-a173c1995254/saml20/idp/slo",
+            "binding": "urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect"
+        },
+        "x509cert": "MIIDejCCAmKgAwIBAgIGAYs/Kr5AMA0GCSqGSIb3DQEBCwUAMH4xCzAJBgNVBAYTAlVTMRYwFAYDVQQKDA1QaW5nIElkZW50aXR5MRYwFAYDVQQLDA1QaW5nIElkZW50aXR5MT8wPQYDVQQDDDZQaW5nT25lIFNTTyBDZXJ0aWZpY2F0ZSBmb3IgQWRtaW5pc3RyYXRvcnMgZW52aXJvbm1lbnQwHhcNMjMxMDE3MTk0NDA3WhcNMjQxMDE2MTk0NDA3WjB+MQswCQYDVQQGEwJVUzEWMBQGA1UECgwNUGluZyBJZGVudGl0eTEWMBQGA1UECwwNUGluZyBJZGVudGl0eTE/MD0GA1UEAww2UGluZ09uZSBTU08gQ2VydGlmaWNhdGUgZm9yIEFkbWluaXN0cmF0b3JzIGVudmlyb25tZW50MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAkupOuYgJcm5rUTN1nYjvkHZEg1ElT8pcorgU8pSWAktk66hHqEUkU2u/K0aBN0M0mxRoaCJP7xp9IwVFRrKzYe8nOCBLmm7vhgCYFyaML65XMS/d0FbMA0sYlZVIeNPvL7k2zrjwjM67FTc6+W+OM/tXKQpxTCPyOud45BQMUu2o0nIjnMqdM9DSDU1HgsK/HCtlZagIx1akvv7VdQ43Sk8XIX4/0NbsSxtWCXHKbgRMP4U/9Z3keA3npD61qOdLz3MJHw2a11d6xTPqBBtQHzqjbaIUgbpjDFWrQqkACgYLCsAYCTLErPy3L5pweYNR/q9n+RlI4uheXM15kdQIAQIDAQABMA0GCSqGSIb3DQEBCwUAA4IBAQBNEvnHkQ0u66Bcdl6nXipnMT+awbl/NqWeE/rtSVqWTCdcPhIh+g+jWFaLsv9zAsw1MW4brjO7dc69ddkJKWj7qG6JhaT4q4+/tdGiVyR9qQ6M8VELTci+RVN+ZyqmSubWZLHgU9DOZkP0toSTl87bt1OWl/eh6F6PY/NVpVzp57YDz6Ui457virfIar/IYBkw4T8axJ+rHLLUamONZtpQbauLNyY801UTALsL08wG7UzRt/Oxprp7+/YTpNeqJPSxg79KYOwiF8Cif+CN6KihA+Vpqms3CKgBo8iaUjl6FfI73H+Gl+GGNKm9ZmQtfanrXLg7y6Y7lMMiljqXvYnh"
+    }
+}
